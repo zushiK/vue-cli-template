@@ -8,6 +8,16 @@
   </div>
 </template>
 
+<script lang="ts">
+import Vue from 'vue';
+export default Vue.extend({
+  created() {
+    this.$axios.get('https://httpbin.org/json').then(res => {
+      console.log(res);
+    });
+  }
+});
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
