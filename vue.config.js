@@ -8,5 +8,6 @@ module.exports = {
         prependData: '@import "./src/assets/scss/main.scss";'
       }
     }
-  }
+  },
+  transpileDependencies: ['vuetify']
 };

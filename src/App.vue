@@ -1,21 +1,25 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/signin">signin</router-link> |
+      <router-link to="/signup">signup</router-link> |
+    </div> -->
     <router-view />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import axios, { AxiosResponse } from 'axios';
+
 export default Vue.extend({
-  created() {
-    this.$axios.get('https://httpbin.org/json').then(res => {
-      console.log(res);
-    });
-  }
+  // created() {
+  //   axios.get('https://httpbin.org/json').then((res: AxiosResponse) => {
+  //     console.log(res);
+  //   });
+  // }
 });
 </script>
 <style lang="scss">
